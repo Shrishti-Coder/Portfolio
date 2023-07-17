@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+    
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-style: inherit;
+      line-height: 1.0;
+    }
+    
+    header {
+      background: rgb(28, 27, 27);
+      color: #fff;
+      padding-left: 10px;
+      display: flex;
+      height: 40px;     
+      justify-content: space-between; 
+      border-color: rgb(2, 167, 179);
+      border-bottom-style: solid;
+      border-bottom-width: 3.1px;
+       padding-bottom: 10px;     
+    }
+    
+    header h1 {
+        height: 50px;
+      font-size: 25px;
+      padding-top: 5px;
+      padding-bottom:10px ;
+    }
+   
+    nav{
+      
+      font-size: 16px;
+        height: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+    }
+    
+    nav ul li {
+        
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration-line: blink;
+      
+    }
+
+    nav ul li a:hover
+    {
+      color: red;
+    }
+    .sec1 {
+        background-image: url(Screenshot\ \(55\).png);
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .sec1-d {
+        width: 700px;
+        height: 290px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.631);
+        text-align: center;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .sec1-d h2 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+      
+      .sec1-d p {
+        font-size: 15px;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:rgb(119, 27, 42);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin: 10px;
+      }
+      .btn:hover{
+        background-color: rgb(120, 218, 247);
+      }
+      .sec2
+      {
+        background: white;
+          background-size: cover;
+          height: 550px;
+      width: 100%;
+    
+         padding: 40px;
+         
+      } 
+      .sec2-d
+{
+  display: flex;
+         justify-content: space-between;
+}
+      .sec2 h1{
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bolder;
+        align-items: center;
+    display: flex;
+    justify-content: center;
+      } 
+      .sec2 h3{
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 20px;
+        margin-top: 0px;
+    margin-bottom: 10px;
+      }
+      .con
+      {
+        margin: 40px;
+        margin-top: 30px;
+        align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+        padding-left: 20px;
+width: 300px;
+      } 
+      .con p{
+        font-size: 13px;
+    width: 380px;
+      }
+      .con img{
+        width: 100%;
+        height: 70%;
+      }
+      .con1
+      {
+        margin: 40px;
+        width: 500px;
+      } 
+      .bar{
+        margin-bottom:20px ;
+        height: 24px;
+        display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background:#d0d2d2;
+      }
+      .tag
+      {
+        height: 24px;
+        background: #04c2c9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100px;
+    font-size: 12px;
+}
+
+
+ 
+      .hed1{
+        display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 0px;
+          margin-bottom: 20px;
+      } 
+      
+      .grid
+      {
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+
+      }
+      
+   
+      
+      .sec3
+      {
+        
+        width: 100%;
+        background: rgb(245, 245, 245);
+          background-size: cover;
+          height: 518px;
+         padding-top: 20px;
+         margin-bottom: 40px;
+      }  
+      
+      .container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      width: 320px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .hh{
+      margin: 10px;
+      width:100px;
+      height: 30px;
+      font-size: 25px;
+    }
+    
+    .container:hover .text-overlay {
+      opacity: 1;
+    }
+    
+    .container img {
+     
+        margin: 20px;
+    width: 320px;
+    height: 190px;
+      }
+      .sec4 
+      {
+        background: rgb(5, 7, 18);
+    height: 400px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+      }
+      .sec4 h1{
+        font-size: 30px;
+        padding-bottom: 8px;
+        
+        border-color: white;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: fit-content;
+      }
+      .sec4 a{
+        text-decoration-line: blink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #04c2c9;
+      }
+      form
+      {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+      }
+      input
+      {
+        background-color: rgb(39, 38, 38);
+        height: 25px;
+    width: 383px;
+    margin: 4px;
+      }
+      button
+      {
+        margin-left: 292px;
+    border-width: 0.5px;
+    margin-top: 2px;
+        border: #ffffff solid;
+        background: black;
+        width: 90px;
+        color: #fff;
+        height: 35px;
+      }
+      button:hover
+      {
+        background: #05e8f0;
+      }
+      .fa-linkedin {
+  background: #3c3b3b;
+  color: white;
+  font-size: 20px;
+}
+.fa-facebook {
+  background: #3c3b3b;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  background: #0bc9cf;
+  color: #ffffff;
+   
+}
+.fa-instagram {
+  background: #3c3b3b;
+  color: white;
+}
+.fa-github {
+  background: #3c3b3b;
+  color: white;
+}
+.log
+{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+footer
+{
+  background:rgb(1, 2, 8) ;
+  height: 100px;
+  padding: 10px;
+}
+footer p{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:12px;
+  color: rgb(171, 66, 66);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+      </style> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+       
+        <h1>Shrishti Kumari</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Skills</a></li>
+            <li><a href="#sec3">Projects</a></li>
+            <li><a href="#sec4">Contact</a></li>
+            
+          </ul>
+        </nav>
+    
+        
+      </header>
+    
+      <section class="sec1" id="sec1">
+        
+        <div class="sec1-d">
+          <h2>Shrishti Kumari</h2>
+          <p>Continuous learning mindset and ability to adapt to new technologies.</p>
+          <a href="#" class="btn">Get In Touch</a>
+         
+        </div>
+        <hr>
+      </section>
+      <section id="about" class="sec2">
+
+        <h1>ABOUT</h1>
+        <div class="sec2-d">
+        <div class="con">
+          <img src="Untitled design (2).png" alt="error">
+          <h3>Who's this ?</h3>
+          <p style="align-items: center;">A passionate and detail-oriented web developer with a strong foundation in HTML, CSS, and JavaScript.
+            Proficient in developing user-friendly websites.
+             Committed to continuously expanding knowledge and staying up-to-date with emerging web technologies.
+             
+            </p>
+        </div>
+     
+        <div class="con1">
+          
+          <div class="bar">
+            
+            <div class="fill" style="width: 90%;background-color:#00a1a7!important;">
+              <div class="tag">HTML</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">90%</span>
+          </div>
+          <div class="bar">
+            
+            <div class="fill" style="width: 60%;background-color:#00a1a7!important;">
+              <div class="tag">CSS</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">60%</span>
+          </div>
+          <div class="bar">
+            
+            <div class="fill" style="width: 40%;background-color:#00a1a7!important;">
+              <div class="tag">JAVASCRIPT</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">40%</span>
+          </div>
+          <div class="bar">
+            
+            <div class="fill" style="width: 40%;background-color:#00a1a7!important;">
+              <div class="tag">PHP</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">40%</span>
+          </div><div class="bar">
+            
+            <div class="fill" style="width: 80%;background-color:#00a1a7!important;">
+              <div class="tag">CANVA</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">80%</span>
+          </div>
+          <div class="bar">
+            
+            <div class="fill" style="width: 50%;background-color:#00a1a7!important;">
+              <div class="tag">UI/UX DESIGN</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">50%</span>
+          </div>
+          <div class="bar">
+            
+            <div class="fill" style="width: 70%;background-color:#00a1a7!important;">
+              <div class="tag">SQL</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">70%</span>
+          </div>
+          <div class="bar">
+            
+            <div class="fill" style="width: 70%;background-color:#00a1a7!important;">
+              <div class="tag">VIDEO EDITING</div>
+           </div>
+            <span style="opacity: 50%;font-size: 15px;padding: 3px;">70%</span>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section  class="sec3" id="sec3">
+        <div class="hed1">
+      <h2>Project</h2>
+      
+        
+      </div>
+        <div class="grid">
+          
+          <div class="container">
+        <img src="S1.png" alt="error">
+        <div class="text-overlay">
+          <h4 class="hh">Project 1</h4>
+          <p>Registration Form</p></div>
+  </div>
+        <div class="container">
+      <img src="S2.png" alt="error">
+      <div class="text-overlay"><h4 class="hh">Project 2</h4>
+        <p>Calculator</p></div>
+  </div>
+      <div class="container">
+      <img src="S3.png" alt="error">
+      <div class="text-overlay"><h4 class="hh">Project 3</h4>
+        <p>To-Do List</p></div>
+  </div>
+      <div class="container">
+      <img src="S4.png" alt="error">
+      <div class="text-overlay">
+        <h4 class="hh">Project 4</h4>
+          <p>Library Management</p></div>
+  </div>
+      <div class="container">
+      <img src="S5.png" alt="error">
+      <div class="text-overlay"><h4 class="hh">Project 5</h4>
+        <p>Library Management</p></div>
+  </div>
+      <div class="container">
+      <img src="S6.png" alt="error">
+      <div class="text-overlay"><h4 class="hh">Project 6</h4>
+        <p>Blogging Website</p></div>
+  </div>
+      </div>
+      
+      
+      </section>
+
+      <section class="sec4" id="sec4">
+<h1>Contact</h1>
+<a href="#">Have a question or want to work together?</a>
+<form action="">
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Your E-Mail">
+<textarea name="" id="" cols="50" rows="8" placeholder="Your Message..." style="background:rgb(39, 38, 38) ;"></textarea>
+</form>
+<button value="Submit">SUBMIT</button>
+</section>
+<footer>
+<div class="log">
+<a href="https://www.facebook.com/shrishti.kumari.750983" class="fa fa-facebook"></a>
+<a href="https://www.linkedin.com/in/shrishti-kumari-078700243/" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/km.shrishti_20/" class="fa fa-instagram"></a>
+<a href="https://github.com/Shrishti-Coder" class="fa fa-github"></a>
+</div>
+
+<p> Shrishti Kumari &copy;2003 </p>
+</footer>   
+</body>
+</html>
